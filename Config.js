@@ -184,6 +184,24 @@ var config = {
 
             // https://github.com/plus3network/gulp-less#options
             pluginOptions: {}
+        },
+
+        /*
+         |----------------------------------------------------------------
+         | Stylus Compilation
+         |----------------------------------------------------------------
+         |
+         | Gone are the days of researching how to call Stylus on a given
+         | folder. Simply run `mix.stylus('file.styl')` and you're all
+         | set. This object sets the folder name and plugin opts.
+         |
+         */
+
+        stylus : {
+            folder: 'stylus',
+
+            // https://github.com/stylus/stylus
+            pluginOptions: {}
         }
     },
 

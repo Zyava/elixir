@@ -12,7 +12,7 @@ var config = Elixir.config;
  |
  | This task will compile your Sass, including minification and
  | and auto-prefixing. Sass is one of the CSS pre-precessors
- | supported by Elixir, along with the Less CSS processor.
+ | supported by Elixir, along with the Less and Stylus CSS processors.
  |
  */
 
@@ -47,7 +47,7 @@ Elixir.extend('rubySass', function() {
 /**
  * Prep the Gulp src and output paths.
  *
- * @param  {string|array} src
+ * @param  {string|Array} src
  * @param  {string|null}  output
  * @return {object}
  */
@@ -55,4 +55,4 @@ var prepGulpPaths = function(src, output) {
     return new Elixir.GulpPaths()
         .src(src, config.get('assets.css.sass.folder'))
         .output(output || config.get('public.css.outputFolder'), 'app.css');
-}
+};
